@@ -1,0 +1,32 @@
+<script type="text/javascript">
+ document.write('<h1> Lista de Mercado </h1>');
+ // cria uma linha de fora a fora na página html
+  document.write('<hr size="10">');
+ var lista = [];
+ var contador=0;
+ var item = '';
+ while(item !='*'){
+ 	item = prompt('Digite o item que deseja inserir na lista. Caso queira sair da sua lista,digite"*"'); 
+ 
+   lista[contador]=item;
+   contador++;
+
+}
+contador = 0;
+
+while(contador< lista.length){
+	document.write('<br>');
+
+	document.write( '<input type = "checkbox">'+lista[contador]+'<br> ');
+
+	contador++;
+
+}	
+// item = prompt('teste'); 
+
+
+
+
+
+
+</script>
